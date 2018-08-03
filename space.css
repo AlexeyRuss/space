@@ -1,0 +1,325 @@
+body {
+    margin: 0px;
+    padding: 0px;
+	
+	text-align: center;
+}
+
+h1 {
+	font-size: 250%;
+}
+h2 {
+	font-size: 200%;
+}
+h3 {
+	font-size: 140%;
+}
+p {
+	padding: 0px 20px 0px 20px;
+	font-size: 120%;
+	/*font-family:"Comic Sans MS"  Если что - поменять шрифт (но особо без надобности) */
+}
+
+@media all and (max-width: 1050px) {
+	p, h1, h2, h3, blockquote, q, cite, li {
+		font-size: 60%;
+	}
+}
+
+
+
+
+
+p, ul {
+	text-align: justify;
+}
+
+
+.cont {
+	background-color: black; /*в случае чего сделай контейнер красным*/
+	min-width: 900px;
+    
+    display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+	
+}
+
+
+
+.header {
+    background-color: #171922;
+    color: lightsteelblue;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    background-image: url(images/bk2.jpg);
+    
+}
+
+.navigation {
+    background-color: #101b1b;
+    height: 30px;
+    width: 100%;
+    
+        
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.n {
+    color: white;
+    padding: 3px 4px 4px 30px;
+    border-radius: 30px;
+    background: url(images/3.png) no-repeat;
+	background-color: #2f4f99;
+    
+}
+
+a {
+	color: silver;
+	border-radius: 15px;
+    background-color: #203737;
+    padding: 4px;
+	text-decoration: none;
+	transition: all 1.5s ease;
+	
+}
+a:visited  {
+	color: none;
+}
+
+a:hover {
+	color: black;
+	background-color: #627373;
+}
+
+.start {
+    color: lightsteelblue;
+    background-color: black;
+    text-align: center;
+
+    width: 100%;
+}
+
+@media all and (max-width: 800px) {
+	.start > div > img  {
+		width: 250px;
+	}
+}
+
+
+
+
+
+.theory {
+    color: lightsteelblue;
+    background: url(images/theory2.jpg);
+    text-align: center;
+    
+    width: 100%; 
+    padding: 10px 200px 10px 200px;
+}
+@media all and (max-width: 1050px) {
+	.theory {
+		padding: 10px 0px 0px 10px;
+	}
+}
+
+.problems {
+    background: url(images/Dilemma.jpg) no-repeat;
+    background-color: black;
+    text-align: left;
+    padding: 10px 0px 100px 750px;
+    color: lightsteelblue;
+    
+    width: 100%;
+}
+@media all and (max-width: 1050px) {
+	.problems {
+		padding: 10px 0px 0px 220px;
+	}
+}
+
+
+
+
+.info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.info > div {
+    width: 50%;
+}
+
+
+.danger {
+	background: url(gif/d.gif) center no-repeat;
+    background-color: black;
+	width: 70%;
+	color: white;
+}
+
+
+.speed {
+    width: 100%;
+	color: white;
+}
+
+.calculation {
+    width: 100%;
+	color: white;
+}
+.s_c {
+	background-image: url(images/calculation.png);
+}
+
+
+
+
+.food {
+    background-color: #272b37;
+    width: 50%;
+	color: silver;
+}
+.anabiosis {
+    background-color: #272b37;
+    width: 50%;
+	color: silver;
+}
+.anabiosis > p, .food > p {
+	background-color: #383c48;
+	margin: 4px 6px;
+}
+
+.food > img, .anabiosis > img {
+	width: 400px;
+	height: 300px;
+	border: 5px solid #FFFFFF;
+}
+
+
+
+
+.life_support {
+	color: silver;
+    background-color: #383c48; /*lightsteelblue;*/
+    width: 100%;
+	padding: 10px 250px 10px 250px;
+}
+
+@media all and (max-width: 800px) {
+	.life_support {
+		padding: 0;
+	}
+}
+.life_support > p {
+	background-color: #272b37;
+}
+.mist {
+	transition: all 2s ease;
+	padding: 30px 30px 30px 30px;
+}
+.mist:hover {
+	color: transparent;
+	text-shadow: 1px 1px 15px silver;
+}
+
+
+.meaning {
+	color: white;
+    background-color: black;
+    width: 100%;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around; /* space-evenly */
+}
+
+.m1, .m2, .m3 {
+    border-radius: 30px;
+    background-color: ghostwhite;
+	color: black;
+    padding: 1px;
+	width: 400px;
+	margin: 2px;
+}
+
+.m_size {
+	width: 400px;
+	height: 400px;
+	border-radius: 10px;
+}
+@media all and (max-width: 800px) {
+	.m_size {
+		width: 150px;
+		height: 150px;
+		border-radius: 5px;
+	}
+}
+
+.question {
+    background-color: #ffc;
+    width: 100%;
+}
+.question > a > img {
+	width: 10%;
+}
+
+.footer {
+	color: white;
+    background: url(images/cccp.jpg) center;
+    width: 100%;
+}
+.footer > img {
+	border: 6px double white;
+	width: 400px;
+}
+.footer > h2 {
+	color: black;
+	text-shadow: white 1px 1px 0, white -1px -1px 0, 
+                 white -1px 1px 0, white 1px -1px 0;
+}
+.footer > blockquote, q, cite {
+	font-size: 120%;
+	color: white;
+	text-shadow: black 1px 1px 0, black -1px -1px 0, 
+                 black -1px 1px 0, black 1px -1px 0;
+}
+@media all and (max-width: 1050px) {
+	.footer {
+		font-size: 50%;
+	}
+}
+
+
+
+
+.quote {
+	transition: all 1.5s ease;
+}
+.quote:hover {
+	font-size: 150%;
+}
+
+
+
+
+body.fixedNav .navigation {
+    position: fixed;
+}
+
+body.fixedNav #header {
+    height: 130px;
+}
+
+
+
+
+
+
